@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Connect4</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <script src="Conecct4.js"></script>
+</head>
+<body>
+  <div class="area" >
+    <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+      </ul>
+  </div >
+
+    <audio class="audio" src="" autoplay type="audio" loop=""></audio>
+    <audio id="redPieceSound" src="clicksoundeffect.mp3"></audio>
+    <audio id="yellowPieceSound" src="clicksoundeffect.mp3"></audio>
+    <audio id="redWinSound" src="winners_W9Cpenj.mp3"></audio>
+    <audio id="yellowWinSound" src="winners_W9Cpenj.mp3"></audio>
+
+    <h1 id="judul">Connect 4</h1>
+    
+    <h2 id="winner"></h2>
+    <div class="container">
+    <div id="scores">
+        <p style="color:red">Skor Merah: <span id="scoreRed">0</span></p>
+     </div>
+     <div id="scores">
+        <p style="color:yellow"> Skor Kuning: <span id="scoreYellow">0</span></p>
+     </div>
+    </div>
+      <button id="restartBtn" class="reset">Restart</button>
+
+    <div id="giliran" class="giliran"></div>
+    <div id="board"></div>
+</body>
+</html>

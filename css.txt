@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: url(background.jpg);
+}
+
+#judul{
+    font-family: 'Times New Roman', Times, serif;
+    width: 500px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+#scores{
+    ont-family: 'Times New Roman', Times, serif;
+    width: 250px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    background-color: black;
+    padding: 10px;
+    border: 5px solid white;
+
+}
+#board {
+    height: 540px;
+    width: 630px;
+    background-color: blue;
+    border: 10px solid navy;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+
+    /* Circle */
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid navy;
+}
+
+.red-piece {
+    background-color: red;
+}
+
+.yellow-piece {
+    background-color: yellow;
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Connect4</title>
+    <link rel="stylesheet" href="CSS.css">
+    <script src="Conecct4.js"></script>
+</head>
+<body>
+    <h1 id="judul">Connect 4</h1>
+    
+    <h2 id="winner"></h2>
+    <div id="scores">
+        <p style="color:red">Skor Merah: <span id="scoreRed">0</span></p>
+        <p style="color:yellow"> Skor Kuning: <span id="scoreYellow">0</span></p>
+    </div>
+
+    <audio id="gameMusic" src="music.mp3" loop></audio>
+    <button id="playMusicBtn">Play Music</button>
+    <button id="stopMusicBtn">Stop Music</button> 
+    <button id="restartBtn">Restart</button>
+    <div id="board"></div>
+    
+</body>
+</html>
